@@ -1,0 +1,18 @@
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+    height: 60%;
+	background-color: transparent;
+	background-image: -webkit-linear-gradient(
+        top,
+        transparent 0%,
+        #004e93 35%,
+        #1594e3 50%,
+         #1594e3 51%,
+        #004e93 65%,
+        transparent 100%);
+}

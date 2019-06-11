@@ -1,0 +1,70 @@
+.loaderArea {
+    background: linear-gradient(117deg, #b066fe, #63E2FF);
+    background-size: 400% 400%;
+
+    -webkit-animation: PreloadGradient 4s ease infinite;
+    -o-animation: PreloadGradient 4s ease infinite;
+    animation: PreloadGradient 4s ease infinite;
+    
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 100000;
+}
+@-webkit-keyframes PreloadGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes PreloadGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes PreloadGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.loader {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    
+    -webkit-animation: rotate 6s linear infinite;
+    animation: rotate 6s linear infinite;
+    animation: scale 26s;
+
+}
+
+@-webkit-keyframes rotate {
+    100% {-webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    100% {-webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);}
+} 
+@-webkit-keyframes scale {
+    100% {-webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2)}
+}
+
+@keyframes scale {
+    100% {-webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);}
+}
