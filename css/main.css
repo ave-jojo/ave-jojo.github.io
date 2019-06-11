@@ -4,11 +4,11 @@
 }
 @font-face{
     font-family: 'Malgun';
-    src: url('../fonts/Malgun.ttf');
+    src: url('../fonts/malgun.ttf');
 }
 @font-face{
     font-family: 'Malgun-Bold';
-    src: url('../fonts/Malgunbd.ttf');
+    src: url('../fonts/malgunbd.ttf');
 }
 * {
     margin: 0;
